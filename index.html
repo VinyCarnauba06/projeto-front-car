@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Front Car - Estética Automotiva</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d0d0d;
+      color: #eaeaea;
+    }
+
+    
+    header {
+      background: url('fundo.png') center/cover no-repeat;
+      height: 65vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.65);
+    }
+    header .hero-content {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+    }
+
+    .logo-space {
+      width: 200px;
+      height: 200px;
+      margin: 0 auto 20px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-space img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 10px 0;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      opacity: 0.85;
+    }
+
+    
+    section {
+      max-width: 1100px;
+      margin: 60px auto;
+      background: #1b1b1b;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    }
+    h2 {
+      margin-top: 0;
+      font-size: 2rem;
+      border-left: 5px solid #d32f2f;
+      padding-left: 15px;
+      color: #fff;
+    }
+    p { line-height: 1.7; }
+
+    
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+    .contact-box {
+      background: #262626;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.3);
+    }
+
+    
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 25px;
+      margin-top: 60px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header>
+    <div class="hero-content">
+      <div class="logo-space">
+        <img src="logo.png" alt="Logo Front Car">
+      </div>
+      <h1>Front Car</h1>
+      <p class="subtitle">Estética Automotiva • Funilaria • Pintura</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>Sobre Nós</h2>
+    <p>
+      A <strong>Front Car</strong> é especializada em <strong>Estética Automotiva, Funilaria e Pintura</strong>, oferecendo
+      serviços de alta qualidade para garantir ao seu veículo o melhor acabamento possível. Localizada em
+      Maceió–AL, somos reconhecidos pela excelência no atendimento e pela precisão técnica em cada etapa do serviço.
+    </p>
+    <p>
+      Com uma equipe experiente e equipamentos modernos, realizamos desde pequenos reparos até revitalizações
+      completas, sempre com foco em <strong>detalhamento, brilho, proteção e restauração da originalidade</strong> do veículo.
+      Trabalhamos com produtos profissionais e processos especializados, garantindo um acabamento superior.
+    </p>
+    <p>
+      Nosso compromisso é entregar resultados impecáveis, valorizando seu patrimônio e oferecendo ao cliente
+      <strong>confiança, transparência e qualidade</strong> em cada trabalho.
+    </p>
+  </section>
+
+
+  <section>
+    <h2>Contato</h2>
+    <div class="contact-grid">
+      <div class="contact-box">
+        <h3>Email</h3>
+        <p>frontcar@gmail.com</p>
+      </div>
+
+      <div class="contact-box">
+        <h3>Telefones</h3>
+        <p>(82) 3337-3595 / 3005<br>99601-1827</p>
+      </div>
+
+      <div class="contact-box">
+        <h3>Endereço</h3>
+        <p>Av. Cdor. Calaça, n° 1552<br>Poço, Maceió - AL</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Front Car © 2025 — Todos os direitos reservados
+  </footer>
+
+</body>
+</html>
